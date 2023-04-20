@@ -1,50 +1,57 @@
 package com.tit.model;
 
-import lombok.Getter;
-import lombok.Setter;
-
-@Getter @Setter
 public class LoginVO  {
-	 private String id;
-	    private String email;
-	    private String nickname;
-	    private String profile_image;
+	private String id;
+    private String nickname;
+    private String email;
+    private PropertiesVO properties;
+    private KakaoAccountVO kakao_account;
 
-	    public String getId() {
-	        return id;
-	    }
 
-	    public void setId(String id) {
-	        this.id = id;
-	    }
+    public String getId() {
+        return id;
+    }
 
-	    public String getEmail() {
-	        return email;
-	    }
+    public void setId(String id) {
+        this.id = id;
+    }
 
-	    public void setEmail(String email) {
-	        this.email = email;
-	    }
+    public String getNickname() {
+        return nickname;
+    }
 
-	    public String getNickname() {
-	        return nickname;
-	    }
+    public void setNickname(String nickname) {
+        this.nickname = nickname;
+    }
 
-	    public void setNickname(String nickname) {
-	        this.nickname = nickname;
-	    }
+    public String getEmail() {
+        return email;
+    }
 
-	    public String getProfile_image() {
-	        return profile_image;
-	    }
+    public void setEmail(String email) {
+        this.email = email;
+    }
+    
+    public PropertiesVO getProperties() {
+        return properties;
+    }
+    
+    public KakaoAccountVO getKakao_account() {
+        return kakao_account;
+    }
 
-	    public void setProfile_image(String profile_image) {
-	        this.profile_image = profile_image;
-	    }
+    public void setProperties(PropertiesVO properties) {
+        this.properties = properties;
+    }
+    
+    public void setKakao_account(KakaoAccountVO kakao_account) {
+        this.kakao_account = kakao_account;
+    }
+
+ 
     
     @Override
     public String toString() {
-        return "KakaoUserInfoVO [id=" + id + ", email=" + email + ", nickname=" + nickname
-                + ", profile_image=" + profile_image + "]";
+        return "KakaoUserInfoVO [id=" + id + ", email=" + email + ", nickname=" + nickname + "]";
     }
 }
