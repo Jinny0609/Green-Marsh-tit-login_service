@@ -5,16 +5,46 @@ import lombok.Setter;
 
 @Getter @Setter
 public class LoginVO  {
-// 유저 아이디
- private String userid;
-// 유저 비빌번호
- private String userpw;
-// 유저 닉네임
- private String nickname;
- 
- @Override
-	public String toString() {
-		return "KakaoLoginModel [userid=" + userid + ", userpw=" + userpw + ", nickname=" + nickname + "]";
-	}
- 
+	 private String id;
+	    private String email;
+	    private String nickname;
+	    private String profile_image;
+
+	    public String getId() {
+	        return id;
+	    }
+
+	    public void setId(String id) {
+	        this.id = id;
+	    }
+
+	    public String getEmail() {
+	        return email;
+	    }
+
+	    public void setEmail(String email) {
+	        this.email = email;
+	    }
+
+	    public String getNickname() {
+	        return nickname;
+	    }
+
+	    public void setNickname(String nickname) {
+	        this.nickname = nickname;
+	    }
+
+	    public String getProfile_image() {
+	        return profile_image;
+	    }
+
+	    public void setProfile_image(String profile_image) {
+	        this.profile_image = profile_image;
+	    }
+    
+    @Override
+    public String toString() {
+        return "KakaoUserInfoVO [id=" + id + ", email=" + email + ", nickname=" + nickname
+                + ", profile_image=" + profile_image + "]";
+    }
 }
