@@ -32,10 +32,17 @@ h3 {
 
 </head>
 <body>
+<header>
+	<h1>Green Marsh Tit Page</h1>
+		<a href="/oauth2/naver/logoutin">회원탈퇴</a>
+		<a href="/oauth2/naver/logout">로그아웃</a>
+</header>
+
 	<div
 		style="background-color: #15a181; width: 100%; height: 50px; text-align: center; color: white;">
-		<h3>SIST Naver_Login Success</h3>
+		<h3>로그인 성공</h3>
 	</div>
+	
 	<br>
 	<h2 style="text-align: center" id="name"></h2>
 	<h4 style="text-align: center" id="email"></h4>
